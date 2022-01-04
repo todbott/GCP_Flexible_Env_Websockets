@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1419">
+  <title>逆引きヘルパーログイン</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/coffeegrinder.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/wireframe-theme.min.css')}}">
+  <link rel="shortcut icon" href="">
+  <script>document.createElement( "picture" );</script>
+  <script src="{{url_for('static', filename='js/picturefill.min.js')}}" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{url_for('static', filename='js/delivery.js')}}"></script>
+</head>
+
+<body>
+  <main class="row">
+    <article class="coffee-span-8 coffee-880-span-8 coffee-549-span-12 coffee-700-span-12">
+      <h1 class="heading-1">Translation for Modern Japan</h1>
+	  <ismg src="{{url_for('static', filename='img/logo.jpg')}}">
+	  <p class="paragraph">What if there were a native English speaker--an American--right there in your browser with you during the workday, ready for any and all English questions you might have, with a <b>10-minute response time</b>?</p>
+	  <p class="paragraph">That is exactly what Browser-beijin.com offers you.  With a turnaround of 10 minutes* you can receive:</p>
+	  <h2 class="heading-1">Japanese to English(JP --> EN) translation
+	  <br>English document and email correction
+      <br>Answers to any and all English grammar / vocabulary questions</h2>	 
+      <p class="paragraph">All you need to begin is an email address and a credit card!  Please check out the links on the right to find out more about Browser-beijin!</p>
+	  <br>
+	  <br>
+	  <p class="paragraph"> * Translation is delivered within 10 minutes during the timeframe of 9:30 - 17:45 Monday through Friday (JST)</p> 
+	  <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+    </article>
+    <div class="coffee-span-4 coffee-549-span-12 coffee-700-span-12">
+      <div class="container nav-container">
+        <h2 class="heading-1">Site Map</h2>
+        <a class="link-text nav-link" href="{{url_for('index')}}">Home</a>
+        <a class="link-text nav-link" href="{{url_for('my_story')}}">My Story</a>
+        <a class="link-text nav-link" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+        <a class="link-text nav-link" href="{{url_for('how_to_use')}}">How to use</a>
+        <a class="link-text nav-link" href="{{url_for('create')}}">Create an account</a>
+        <a class="link-text nav-link" href="{{url_for('login')}}">Login</a>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+      <h2 class="heading-1">Current deadline status:</h2>
+      <p class="paragraph"><span id="delivery">Getting the day of the week and time...</span>
+	  <div class="rule">
+        <hr>
+      </div>
+    </div>
+  </main>
+  <div class="row full-width-row footer">
+    <div class="coffee-span-12">
+      <footer class="subgrid">
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+          <div class="coffee-span-9 coffee-880-span-12">
+            <a class="link-text footer-nav" href="{{url_for('index')}}">Home</a>
+            <a class="link-text footer-nav" href="{{url_for('my_story')}}">My Story</a>
+            <a class="link-text footer-nav" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+            <a class="link-text footer-nav" href="{{url_for('how_to_use')}}">How to use</a>
+            <a class="link-text footer-nav" href="{{url_for('create')}}">Create an account</a>
+            <a class="link-text footer-nav" href="{{url_for('login')}}">Login</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-12">
+            <div class="rule rule-1">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

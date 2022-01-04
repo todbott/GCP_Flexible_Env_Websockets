@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1419">
+  <title>Browser-beijin</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/coffeegrinder.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/wireframe-theme.min.css')}}">
+  <link rel="shortcut icon" href="">
+  <script>document.createElement( "picture" );</script>
+  <script src="{{url_for('static', filename='js/picturefill.min.js')}}" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{url_for('static', filename='js/delivery.js')}}"></script>
+</head>
+
+<body>
+  <div class="row full-width-row header">
+    <header class="coffee-span-12">
+      <div class="container header-container">
+        <h1 class="page-heading">Login</h1>
+        <p class="paragraph tagline">Login to your account<br>
+        </p>
+      </div>
+    </header>
+  </div>
+  <main class="row">
+    <article class="coffee-span-8 coffee-880-span-8 coffee-549-span-12 coffee-700-span-12">
+      <h1 class="heading-1">Login to your account</h1>
+      <div class="container">
+        <form action="" method="post">
+          <input type="text" placeholder="Username" name="username">
+          <input type="password" placeholder="current-password" name="password">
+          <input class="btn btn-default" type="submit" value="Login">
+        </form>
+        {% if error %}
+          <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+      </div>
+	   <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+    </article>
+    <div class="coffee-span-4 coffee-549-span-12 coffee-700-span-12">
+      <div class="container nav-container">
+        <h2 class="heading-1">Site Map</h2>
+        <a class="link-text nav-link" href="{{url_for('index')}}">Home</a>
+        <a class="link-text nav-link" href="{{url_for('my_story')}}">My Story</a>
+        <a class="link-text nav-link" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+        <a class="link-text nav-link" href="{{url_for('how_to_use')}}">How to use</a>
+        <a class="link-text nav-link" href="{{url_for('create')}}">Create an account</a>
+        <a class="link-text nav-link" href="{{url_for('login')}}">Login</a>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+      <h2 class="heading-1">Current deadline status:</h2>
+      <p class="paragraph"><span id="delivery">Getting the day of the week and time...</span>
+	  <div class="rule">
+        <hr>
+      </div>
+    </div>
+  </main>
+  <div class="row full-width-row footer">
+    <div class="coffee-span-12">
+      <footer class="subgrid">
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+          <div class="coffee-span-9 coffee-880-span-12">
+            <a class="link-text footer-nav" href="{{url_for('index')}}">Home</a>
+            <a class="link-text footer-nav" href="{{url_for('my_story')}}">My Story</a>
+            <a class="link-text footer-nav" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+            <a class="link-text footer-nav" href="{{url_for('how_to_use')}}">How to use</a>
+            <a class="link-text footer-nav" href="{{url_for('create')}}">Create an account</a>
+            <a class="link-text footer-nav" href="{{url_for('login')}}">Login</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-12">
+            <div class="rule rule-1">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

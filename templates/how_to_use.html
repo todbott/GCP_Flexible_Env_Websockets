@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1419">
+  <title>Browser-beijin</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/coffeegrinder.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/wireframe-theme.min.css')}}">
+  <link rel="shortcut icon" href="">
+  <script>document.createElement( "picture" );</script>
+  <script src="{{url_for('static', filename='js/picturefill.min.js')}}" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{url_for('static', filename='js/delivery.js')}}"></script>
+</head>
+
+<body>
+  <div class="row full-width-row header">
+    <header class="coffee-span-12">
+      <div class="container header-container">
+        <h1 class="page-heading">How to Use</h1>
+        <p class="paragraph tagline">The Browser-beijin system explained...<br>
+        </p>
+      </div>
+    </header>
+  </div>
+  <main class="row">
+    <article class="coffee-span-8 coffee-880-span-8 coffee-549-span-12 coffee-700-span-12">
+      <h1 class="heading-1">An all-in-one homescreen</h1>
+	  <p class="paragraph">Log in to your account, and your homescreen appears.  Depending on the time of day, the translation deadline will be different.</p>
+	  <p class="paragraph">Send a request between the hours of 9:30 and 17:45, and a 10-minute timer begins countdown at the bottom of the screen.  When the response comes in, it will be displayed at the bottom of the screen. (If the timer reaches zero with no response, your account will automatically be credited the cost of the translation, plus 50 yen).</p>
+	  <p class="paragraph">Send a request at other times of the day, and it will be uploaded into your "Q and A History" column by the deadline.</p>
+	  <p class="paragraph">Your balance is visible in the upper lefthand corner.  You can charge your account in increments of 1,000 5,000 or 10,000 yen over our secure https connection (payment services provided by <a href="https://stripe.com/jp">Stripe</a>, and credit card information is not kept on file)</p>
+	  <p class="paragraph">A complete history of everything you have asked, with responses, is visible in the "Q and A History" column.  The contents can be downloaded as an excel file at anytime with the click of a button.</p>
+	  <img src="{{url_for('static', filename='img/homescreen.jpg')}}">
+        <div class="rule rule-2">
+          <hr>
+        </div>
+	  <br>
+	  <br>
+	  <h1 class="heading-1">3 Options: English Correction, Translation, and Question</h1>
+	  <p class="paragraph">There are 3 types of request you can send--<b>English correction, Translation, and Question</b>.  Before submitting each type of request, you will be able to see and confirm the cost of the request.  If your balance is sufficient and you would like to continue, clicking "Continue" will send the request.</p>
+	  
+	  <h2 class="heading-1">Requesting an English Correction: 7 yen per word</h2>
+	  <p class="paragraph">In an "English Correction" request, you input English text, and the translator checks the spelling and grammar:
+
+      <div style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="3" cellpadding="2" cellspacing="0" style="border-color: #000000; border-style: solid; background-color: #c0c0c0;">
+      <tr valign="top">
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Example Request</span></p>
+      </td>
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This is pen.</span></p>
+      </td>
+      </tr>
+      <tr valign="top">
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Example Response</span></p>
+      </td>
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This is a pen.</span></p>
+      </td>
+      </tr>
+      </table>
+      </div>
+	  
+	  <br>
+	  <br>
+	  <h2 class="heading-1">Requesting a Translation: 11 yen per character</h2>
+	  <p class="paragraph">In a "Translation" request, you input Japanese text, and the English translation comes back:</p>
+	  
+  	  <div style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="3" cellpadding="2" cellspacing="0" style="border-color: #000000; border-style: solid; background-color: #c0c0c0;">
+      <tr valign="top">
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Example Request</span></p>
+      </td>
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">reba wo tsuyoku hippate kudasai.</span></p>
+      </td>
+      </tr>
+      <tr valign="top">
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Example Response</span></p>
+      </td>
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Please pull the lever strongly.</span></p>
+      </td>
+      </tr>
+      </table>
+      </div>
+	  
+	  <br>
+	  <br>
+	  <h2 class="heading-1">Asking a Question: 100 yen per question</h2>
+	  <p class="paragraph">In a "Question" request, you input a question about grammar or usage, and an answer comes back:</p>
+      
+	  <div style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="3" cellpadding="2" cellspacing="0" style="border-color: #000000; border-style: solid; background-color: #c0c0c0;">
+      <tr valign="top">
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Example Request</span></p>
+      </td>
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Which is more formal, "append" or "add?"</span></p>
+      </td>
+      </tr>
+      <tr valign="top">
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Example Response</span></p>
+      </td>
+      <td style="border-color : #000000 #000000 #000000 #000000; border-style: solid;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">"Append" is more formal, but it is usually used for documents only, e.g. -- Append 2 pages to the report.</span></p>
+      </td>
+      </tr>
+      </table>
+      </div>
+	  
+	  <br>
+	  <br> 
+	   <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+    </article>
+    <div class="coffee-span-4 coffee-549-span-12 coffee-700-span-12">
+      <div class="container nav-container">
+        <h2 class="heading-1">Site Map</h2>
+        <a class="link-text nav-link" href="{{url_for('index')}}">Home</a>
+        <a class="link-text nav-link" href="{{url_for('my_story')}}">My Story</a>
+        <a class="link-text nav-link" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+        <a class="link-text nav-link" href="{{url_for('how_to_use')}}">How to use</a>
+        <a class="link-text nav-link" href="{{url_for('create')}}">Create an account</a>
+        <a class="link-text nav-link" href="{{url_for('login')}}">Login</a>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+      <h2 class="heading-1">Current deadline status:</h2>
+      <p class="paragraph"><span id="delivery">Getting the day of the week and time...</span>
+	  <div class="rule">
+        <hr>
+      </div>
+    </div>
+  </main>
+  <div class="row full-width-row footer">
+    <div class="coffee-span-12">
+      <footer class="subgrid">
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+          <div class="coffee-span-9 coffee-880-span-12">
+            <a class="link-text footer-nav" href="{{url_for('index')}}">Home</a>
+            <a class="link-text footer-nav" href="{{url_for('my_story')}}">My Story</a>
+            <a class="link-text footer-nav" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+            <a class="link-text footer-nav" href="{{url_for('how_to_use')}}">How to use</a>
+            <a class="link-text footer-nav" href="{{url_for('create')}}">Create an account</a>
+            <a class="link-text footer-nav" href="{{url_for('login')}}">Login</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-12">
+            <div class="rule rule-1">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

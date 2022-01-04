@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1419">
+  <title>Browser-beijin</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/coffeegrinder.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/wireframe-theme.min.css')}}">
+  <link rel="shortcut icon" href="">
+  <script>document.createElement( "picture" );</script>
+  <script src="{{url_for('static', filename='js/picturefill.min.js')}}" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{url_for('static', filename='js/delivery.js')}}"></script>
+</head>
+
+<body>
+  <div class="row full-width-row header">
+    <header class="coffee-span-12">
+      <div class="container header-container">
+        <h1 class="page-heading">Why Choose Browser-beijin?</h1>
+        <p class="paragraph tagline">An outline of the key differences<br>
+        </p>
+      </div>
+    </header>
+  </div>
+  <main class="row">
+    <article class="coffee-span-8 coffee-880-span-8 coffee-549-span-12 coffee-700-span-12">
+      <h1 class="heading-1">So many translation companies...</h1>
+	  <p class="paragraph">In a world full of translation companies, why choose Browser-beijin?  In a nutshell, <b>experience, focus, speed, and anonymity</b> are the four strong points of Browser-beijin.
+	  <h2 class="heading-1">Provides translation done by a translator with a long work history in Japan (10 years in education / translation experience)</h2>
+	  <p class="paragraph">With other companies, you might not know who or where the translators are.  Browser-beijin provides translation by a translator located in Japan, with years of business experience.</p>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+	  <h2 class="heading-1">Gives translation done by one translator, working from a desktop PC</h2>
+      <p class="paragraph">Other 'on demand' translation companies routinely route incoming translation to the smartphones of translators who are on-the-go, sometimes multiple translators at a time.  Is your translator at home with the TV remote in one hand, translating your request on his smartphone with the other hand?  With Browser-beijin, you can be sure translation is done by <i>one focused professional</i> working in a quiet office environment.</p>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+	  <h2 class="heading-1">Offers on-demand (10-minute) translation with measurable, defined deadlines and an automatic-refund system</h2>
+      <p class="paragraph">If you make a request between the hours of 9:30 and 17:45 Monday through Friday, if the translator is logged in, the answer will come back within 10 minutes.  When you click the request button, a visible timer appears on your homescreen.  If the answer doesn't come back in 10 minutes, you are automatically refunded the cost of translation, plus a bonus amount.</p>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+	  <h2 class="heading-1">Is sensitive to the anonymity-needs of the Japanese market</h2>
+      <p class="paragraph">Before beginning translation, other companies will ask for tons of information.  Who wants to give out their company name, address, or mobile number?  With Browser-beijin, all you must provide is a credit card number (not kept on file) and an email address if you'd like a receipt.</p>
+	  </article>
+    <div class="coffee-span-4 coffee-549-span-12 coffee-700-span-12">
+      <div class="container nav-container">
+        <h2 class="heading-1">Site Map</h2>
+        <a class="link-text nav-link" href="{{url_for('index')}}">Home</a>
+        <a class="link-text nav-link" href="{{url_for('my_story')}}">My Story</a>
+        <a class="link-text nav-link" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+        <a class="link-text nav-link" href="{{url_for('how_to_use')}}">How to use</a>
+        <a class="link-text nav-link" href="{{url_for('create')}}">Create an account</a>
+        <a class="link-text nav-link" href="{{url_for('login')}}">Login</a>
+        <div class="rule rule-2">
+          <hr>
+        </div>
+      </div>
+      <h2 class="heading-1">Current deadline status:</h2>
+      <p class="paragraph"><span id="delivery">Getting the day of the week and time...</span>
+	  <div class="rule">
+        <hr>
+      </div>
+    </div>
+  </main>
+  <div class="row full-width-row footer">
+    <div class="coffee-span-12">
+      <footer class="subgrid">
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+          <div class="coffee-span-9 coffee-880-span-12">
+            <a class="link-text footer-nav" href="{{url_for('index')}}">Home</a>
+            <a class="link-text footer-nav" href="{{url_for('my_story')}}">My Story</a>
+            <a class="link-text footer-nav" href="{{url_for('reasons_to_choose')}}">Reasons to Choose</a>
+            <a class="link-text footer-nav" href="{{url_for('how_to_use')}}">How to use</a>
+            <a class="link-text footer-nav" href="{{url_for('create')}}">Create an account</a>
+            <a class="link-text footer-nav" href="{{url_for('login')}}">Login</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-12">
+            <div class="rule rule-1">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="coffee-span-3 hidden-column"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
